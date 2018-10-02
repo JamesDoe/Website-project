@@ -1,16 +1,23 @@
-.fixed { left: 0; height:40px ; line-height: 40px; position: absolute; text-align: center; top: 0; }
-#nav { margin: 60px auto 0px auto; text-align: center; width: 62% }
-#nav a { display: block; height: 30px; line-height: 30px; width: 100%; }
-#nav li { display: inline-block; list-style: none; width: 33.33% }
-#nav a:active {  }
-#nav li:first-of-type > a { 
-    border-left: 1px solid black; 
- }
-#nav a:not(:active) { 
-    border-top: 1px solid black; 
-    border-right: 1px solid black; 
-    /* border-bottom: 1px solid black;  */
+:root {
+    --titlebarHeight: 30px;
 }
-#ul-container { 
-    border-bottom: 1px solid black;     
- }
+#About { background-color: orange; }
+.fixed, button { font-family: Oswald, sans-serif; }
+#Contact { background-color: blue; }
+#container { margin-top: var(--titlebarHeight); }
+.content { animation: fadeEffect .38s; color: white; display: none; font-family: Abel, sans-serif; height: 62vh; padding: 100px 20px; vertical-align: middle; }
+.fixed { height: var(--titlebarHeight); line-height: var(--titlebarHeight); position: absolute; text-align: center; top: 0; width: 100vw; }
+input[type="text"] { box-sizing: border-box; height: 30px; line-height: 30px; overflow: hidden; padding: 4px; width:100% }
+label { font-size: 1.38em; }
+label span { display: block; background-color: rgb(215, 215, 215); border-radius: .25em; border: 1px solid rgb(114, 114, 114); margin-top: .38em; }
+#Login { background-color: red; }
+#login-box { background: blue; margin: auto; padding: 20px; height: 38vw; width: 38vw; }
+[class^='login-button'] { background-color: transparent; border: 0; border-radius: 3px; display: block; margin-top: 30px; }
+[class^='login-button']:hover { cursor: pointer; }
+.login-button { font-size: 1.38em; padding: 10px 0px; width: 100%; }
+.login-button:hover { background-color: red; }
+.login-button2 { float:left; width: 50%; }
+.tablink { background-color: #555; border: none; color: white; cursor: pointer; float: left; font-size: 1.62em; outline: none; transition: .62s; padding: 14px 16px; width: 12.5%; }
+.tablink:hover { background-color: #777; }
+  
+@keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }

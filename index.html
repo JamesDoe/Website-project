@@ -4,26 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Rakkas|Oswald:400,600,900" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Home</title>
+    <title>Login</title>
 </head>
 <body>
     <div class="fixed">DEATHWISH SOCIETY</div>
-    <div id="ul-container">
+    <!-- <div id="ul-container">
         <ul id="nav"></ul>
+    </div> -->
+    <div id="container">
+        <button class="tablink" style="height:100%;">&nbsp;</button>
+        <button class="tablink" id="defaultOpen" onclick="openPage('Login', this, 'red')">Login</button>
+            <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+            <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+        <div id="Login" class="content">
+            <div id="login-box">
+                <!-- <div style="padding-top:62%">
+                    <label for="username">Username:</label><br>
+                    <input placeholder="Enter your username" type="text">
+                </div> -->
+                <div style="padding-top:24%">    
+                    <label>E-mail address
+                        <span><input name="email" type="text" /></span>
+                    </label>
+                    <br>
+                    <label>Password
+                        <span><input name="email" type="text" /></span>
+                    </label>
+                </div>
+                <div>
+                    <button class="login-button">LOGIN</button>
+                    <button class="login-button2">FORGOT PASSWORD</button>
+                    <button class="login-button2">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+          
+        <div id="About" class="content">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint, quidem expedita possimus reiciendis aliquam, temporibus, dolore aliquid velit dolorum commodi ipsum optio! Earum, quo.</p>
+        </div>
+                    
+        <div id="Contact" class="content">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sint, quidem expedita possimus reiciendis aliquam, temporibus, dolore aliquid velit dolorum commodi ipsum optio! Earum, quo.</p>
+            </div>
+          
     </div>
 </body>
-<script>
-    const links = ["Login", "About", "Contact"];
-    const nav = document.getElementById("nav");
-    links.forEach((element,index) => {
-        let a = document.createElement('a'), node = document.createElement("li"), linkText = document.createTextNode(element);
-        a.appendChild(linkText);
-        a.href = "http://example.com";
-        node.appendChild(a);
-        node.setAttribute("class","nav_link");
-        nav.appendChild(node);
-    });
+<script src="./js/main.js">
+    // const links = ["Login", "About", "Contact"];
+    // const nav = document.getElementById("nav");
+    // links.forEach((element,index) => {
+    //     let a = document.createElement('a'), node = document.createElement("li"), linkText = document.createTextNode(element);
+    //     a.appendChild(linkText);
+    //     a.href = "http://example.com";
+    //     node.appendChild(a);
+    //     node.setAttribute("class","nav_link");
+    //     nav.appendChild(node);
+    // });
 </script>
 </html>
