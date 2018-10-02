@@ -33,14 +33,14 @@ label span { display: block; background-color: rgb(215, 215, 215); border-radius
         }
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         /* start of medium tablet styles */
         .tablink {
-            width: 20%;
+            width: 25%;
         }
     }
     
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 480px) {
         /* start of phone styles */
         label {
             font-size: 1em;

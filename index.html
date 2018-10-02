@@ -16,10 +16,13 @@
     </div> -->
     <div id="container">
         <button class="tablink" style="height:100%;">&nbsp;</button>
-        <button class="tablink" id="defaultOpen" onclick="openPage('Login', this, 'red')">Login</button>
+        <!-- <button class="tablink" id="defaultOpen" onclick="openPage('Login', this, 'red')">Login</button>
             <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-            <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <div id="Login" class="content">
+            <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button> -->
+            <button class="tablink" id="defaultOpen" onclick="openPage(this)">Login</button>
+            <button class="tablink" onclick="openPage(this)">About</button>
+            <button class="tablink" onclick="openPage(this)">Contact</button>
+            <div id="Login" class="content">
             <div id="login-box">
                 <!-- <div style="padding-top:62%">
                     <label for="username">Username:</label><br>
