@@ -22,3 +22,31 @@ label span { display: block; background-color: rgb(215, 215, 215); border-radius
 .tablink:hover { background-color: #777; }
   
 @keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
+
+    /* start of desktop styles */
+
+    @media screen and (max-width: 991px) {
+        /* start of large tablet styles */
+        .title-inner {
+            font-size: 4.24em;
+            line-height: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        /* start of medium tablet styles */
+        .tablink {
+            width: 20%;
+        }
+    }
+    
+    @media screen and (max-width: 479px) {
+        /* start of phone styles */
+        label {
+            font-size: 1em;
+        }
+        .tablink {
+            font-size: 1em;
+            width: 25%;
+        }
+    }
