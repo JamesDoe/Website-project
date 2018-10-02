@@ -1,0 +1,16 @@
+.fixed { left: 0; height:40px ; line-height: 40px; position: absolute; text-align: center; top: 0; }
+#nav { margin: 60px auto 0px auto; text-align: center; width: 62% }
+#nav a { display: block; height: 30px; line-height: 30px; width: 100%; }
+#nav li { display: inline-block; list-style: none; width: 33.33% }
+#nav a:active {  }
+#nav li:first-of-type > a { 
+    border-left: 1px solid black; 
+ }
+#nav a:not(:active) { 
+    border-top: 1px solid black; 
+    border-right: 1px solid black; 
+    /* border-bottom: 1px solid black;  */
+}
+#ul-container { 
+    border-bottom: 1px solid black;     
+ }

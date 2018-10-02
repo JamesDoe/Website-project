@@ -1,0 +1,4 @@
+.bannertext { background-color: gray; font-family: 'Rakkas', cursive; }
+body { background-color:#7851a9; }
+h1 { margin: 25px 550px 25px; border-style: solid; border-width: 5px; border-radius: 40px; }
+img { position: absolute; left: 0px; top: 0px; z-index: -1; }
