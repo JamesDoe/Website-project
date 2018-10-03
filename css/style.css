@@ -6,7 +6,7 @@ button, .fixed, input  { font-family: Oswald, sans-serif; }
 #Contact { background-color: blue; }
 #container { margin-top: var(--titlebarHeight); }
 .content { animation: fadeEffect .38s; color: white; display: none; font-family: Abel, sans-serif; height: 100vh; padding: 100px 20px; vertical-align: middle; }
-.fixed { font-weight: bold; height: var(--titlebarHeight); line-height: var(--titlebarHeight); position: absolute; text-align: center; top: 0; width: 100vw; }
+.fixed { background: white; font-weight: bold; height: var(--titlebarHeight); line-height: var(--titlebarHeight); position: fixed; text-align: center; top: 0; width: 100vw; }
 input { box-sizing: border-box; height: 30px; line-height: 30px; overflow: hidden; padding: 4px; width:100% }
 label { font-size: 1.38em; }
 label span { display: block; background-color: rgb(215, 215, 215); border-radius: .25em; border: 1px solid rgb(114, 114, 114); margin-top: .38em; }
@@ -19,7 +19,6 @@ label span { display: block; background-color: rgb(215, 215, 215); border-radius
 .login-button2 { float:left; width: 50%; }
 .login-button2:hover { color: red; }
 #skull { margin-top: 50px; }
-#skull-sm { display: inline; height: 20px; }
 .tablink { background-color: #555; border: none; color: white; cursor: pointer; float: left; font-size: 1.62em; outline: none; transition: .62s; padding: 14px 16px; width: 12.5%; }
 .tablink:hover { background-color: #777; }
   
