@@ -18,13 +18,12 @@
         <ul id="nav"></ul>
     </div> -->
     <div id="container">
-        <button class="tablink" style="height:100%;">&nbsp;</button>
-        <!-- <button class="tablink" id="defaultOpen" onclick="openPage('Login', this, 'red')">Login</button>
-            <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-            <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button> -->
-            <button class="tablink" id="defaultOpen" onclick="openPage(this)">Login</button>
-            <button class="tablink" onclick="openPage(this)">About</button>
-            <button class="tablink" onclick="openPage(this)">Contact</button>
+        <div id="buttonContainer">
+            <button class="tablink" style="height:100%;">&nbsp;</button>
+                <!-- <button class="tablink" id="defaultOpen" onclick="openPage(this)">Login</button>
+                <button class="tablink" onclick="openPage(this)">About</button>
+                <button class="tablink" onclick="openPage(this)">Contact</button> -->
+        </div>
             <div id="Login" class="content">
             <div id="login-box">
                 <!-- <div style="padding-top:62%">
@@ -63,16 +62,5 @@
           
     </div>
 </body>
-<script src="./js/main.js">
-    // const links = ["Login", "About", "Contact"];
-    // const nav = document.getElementById("nav");
-    // links.forEach((element,index) => {
-    //     let a = document.createElement('a'), node = document.createElement("li"), linkText = document.createTextNode(element);
-    //     a.appendChild(linkText);
-    //     a.href = "http://example.com";
-    //     node.appendChild(a);
-    //     node.setAttribute("class","nav_link");
-    //     nav.appendChild(node);
-    // });
-</script>
+<script src="./js/main.js"></script>
 </html>
